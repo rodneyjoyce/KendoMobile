@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Durandal Kendo Mobile</title>
+    <script src="lib/jquery-2.0.0.min.js"></script>
+    <script src="css/telerik/js/kendo.mobile.min.js"></script>
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/kendo.ftter.css" rel="stylesheet" />
+    <link href="css/telerik/styles/kendo.mobile.flat.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div data-role="layout" data-id="mobile-tabstrip">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-role="button" data-rel="drawer" href="#left-drawer" data-align="left"><i class="icon-reorder"></i></a>
+                <!--<a class="nav-button" data-align="left" data-role="backbutton">Back</a>-->
+                <span data-role="view-title"></span>
+                <!--<a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>-->
+                <a data-role="button" data-rel="drawer" href="#right-drawer" data-icon="share" data-align="right"></a>
+            </div>
+        </header>
+
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <!--                <a href="#tabstrip-home" data-icon="home">Home</a>-->
+                <a href="#tabstrip-profile" data-icon="contacts">Me</a>
+                <a href="#tabstrip-settings" data-icon="add">Dare Someone</a>
+                <a href="#tabstrip-sales" data-icon="toprated">My Dares</a>
+                <!--<a href="#tabstrip-settings" data-icon="settings">Settings</a>-->
+            </div>
+        </div>
+    </div>
+
+    <div data-role="view" id="tabstrip-profile" data-title="Rodders" data-layout="mobile-tabstrip">
+        <ul data-role="listview" data-style="inset" data-type="group">
+            <li>
+                <ul>
+                    <li>
+                        <h2><span>Get fitter</span></h2>
+                        <img src="http://www.ftter.com/profilepic.ashx?userId=8&h=50&w=50" /></li>
+                    <li>Weekly average sales <span class="sales-up">$ 8,250</span></li>
+                    <li>Monthly average sales <span class="sales-up">$ 32,000</span></li>
+                </ul>
+            </li>
+            <li>Languages
+                    <ul>
+                        <li>English <span class="value">Native</span></li>
+                        <li>Spanish <span class="value">Intermediate</span></li>
+                        <li>French <span class="value">Advanced</span></li>
+                        <li>Chinese <span class="value">Beginner</span></li>
+                        <li>French <span class="value">Advanced</span></li>
+                        <li>Chinese <span class="value">Beginner</span></li>
+                        <li>French <span class="value">Advanced</span></li>
+                        <li>Chinese <span class="value">Beginner</span></li>
+                    </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="view" id="tabstrip-sales" data-title="My Dares" data-layout="mobile-tabstrip">
+        <ul data-role="listview" data-style="inset" data-type="group">
+            <li>Sales 2011
+                    <ul>
+                        <li>January <span class="sales-up">&uarr; $ 35,000</span></li>
+                        <li>February <span class="sales-down">&darr; $ 25,000</span></li>
+                        <li>March <span class="sales-down">&darr; $ 23,000</span></li>
+                        <li>April <span class="sales-up">&uarr; $ 30,000</span></li>
+                        <li>May <span class="sales-up">&uarr; $ 31,000</span></li>
+                        <li>June <span class="sales-down">&darr; $ 29,000</span></li>
+                        <li>July <span class="sales-up">&uarr; $ 35,000</span></li>
+                        <li>August <span class="sales-up">&uarr; $ 37,000</span></li>
+                        <li>September <span class="sales-hold">&rarr; $ 37,000</span></li>
+                        <li>October <span class="sales-hold">&rarr; $ 37,000</span></li>
+                        <li>November <span class="sales-up">&uarr; $ 38,000</span></li>
+                        <li>December <span class="sales-up">&uarr; $ 40,000</span></li>
+                    </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="view" id="tabstrip-settings" data-title="Dare Someone" data-layout="mobile-tabstrip">
+        <ul data-role="listview" data-style="inset" data-type="group">
+            <li>Carine Callahan
+                <ul>
+                    <li>Notify when online
+                        <input type="checkbox" data-role="switch" checked></li>
+                    <li>Administrator
+                        <input type="checkbox" data-role="switch"></li>
+                    <li>Access to stats
+                        <input type="checkbox" data-role="switch" checked></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- fb style menus -->
+    <div data-role="drawer" id="left-drawer" style="width: 270px" data-title="My ftter">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+
+        <ul data-role="listview" data-type="group">
+            <li>
+                <ul data-role="listview">
+                    <li data-icon="contacts">Rodders</li>
+                    <li data-icon="to1prated">My Dares</li>
+                </ul>
+            </li>
+            <li>Help
+                <ul data-role="listview">
+                    <li data-icon="play">Tutorial</li>
+                    <li data-icon="fe1atured">FAQs</li>
+                    <li data-icon="com1pose">Report a Problem</li>
+                    <li data-icon="i1nfo">Terms of Use</li>
+                    <li data-icon="a1bout">About ftter</li>
+                </ul>
+            </li>
+            <li>Settings
+                <ul data-role="listview">
+                    <li data-icon="settings">App Settings</li>
+                    <li data-icon="rece1nts">Logout</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <div data-role="drawer" id="right-drawer" style="width: 180px" data-title="Share the Love" data-position="right">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <ul data-role="listview">
+            <li data-icon="toprated"><a href="#bar">&nbsp;Rate this App</a></li>
+            <li><a href="#foo"><i class="icon-facebook-sign icon-large"></i>&nbsp;&nbsp;&nbsp;on Facebook</a></li>
+            <li><a href="#bar"><i class="icon-twitter icon-large"></i>&nbsp;&nbsp;&nbsp;on Twitter</a></li>
+            <li data-icon="comments"><a href="#bar">&nbsp;Tell a Friend</a></li>
+        </ul>
+    </div>
+
+    <!--    <div data-role="drawer" id="right-drawer" style="width: 80px" data-title="Share" data-position="right" data-views="['two-drawer-home', '/mobile/m/drawer/two-way-drawers.html']">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <img src="../../content/mobile/shared/share.png" width="100%" />
+    </div>-->
+
+    <script>
+        var app = new kendo.mobile.Application($(document.body), {
+            skin: "flat"
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+/* ##################### CUSTOM #####################  
+    Do not put anything in there that overrides a library css - custom only     */
+
+/* ##################### Pages #####################  */
+
+
+/* ##################### Profile #####################  */
+
+#profile
+{
+}
+
+/* ##################### Dare Detail #####################  */
+
+#dareDetail
+{
+}
+
+    #dareDetail #profiles
+    {
+        height: 135px;
+    }
+
+    #dareDetail .profile
+    {
+        display: block;
+        height: 105px;
+    }
+
+    #dareDetail #profiles .dareFrom
+    {
+        float: left;
+        width: 50%;
+    }
+
+    #dareDetail #profiles #dareFromName
+    {
+    }
+
+    #dareDetail #profiles .dareTo
+    {
+        float: right;
+    }
+
+    #dareDetail #profiles #dareToName
+    {
+        float: right;
+    }
+
+    #dareDetail #profiles img
+    {
+        width: 100px;
+        border: 2px solid #555;
+    }
+
+    #dareDetail #profiles #versusWord
+    {
+        display: inline-block;
+        margin-top: 35px;
+        margin-left: -27px;
+        color: white;
+    }
+
+    #dareDetail #dareTextBlock
+    {
+        clear: both;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #dareDetail #dareTextToWord
+    {
+        /*color: white;*/
+    }
+
+    #dareDetail #dareText
+    {
+    }
+
+    #dareDetail #acceptdeclineBlock
+    {
+        margin-top: 20px;
+    }
+
+    #dareDetail #acceptDareText
+    {
+        display: block;
+        color: white;
+        text-align: center;
+    }
+
+    #dareDetail #buttonBlock
+    {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 198px;
+    }
+
+    #dareDetail .button-positive, #dareDetail .button-negative
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+
+/* ##################### Walkthrough #####################  */
+
+#walkthrough
+{
+}
+
+/* ##################### Login #####################  */
+
+#login
+{
+}
+
+/* ##################### Privacy #####################  */
+
+#privacy
+{
+    font-size: 14px;
+}
+
+/* ##################### Pages #####################  */
+
+div#menu
+{
+    width: 20%;
+    background-color: #000;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    z-index: 10000;
+    display: none;
+}
+
+/* ##################### Loader #####################  */
+
+#pageLoaderContainer
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+    /* Splash screen on load only */
+    #pageLoaderContainer.splashScreen
+    {
+        background-color: #000;
+        background-image: url(../img/background-pattern.jpg);
+    }
+
+#pageLoader
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10001;
+    opacity: 1;
+    margin-left: -35px;
+    margin-top: -25px;
+}
+
+    /* Splash screen on load only */
+    #pageLoader.splashScreen
+    {
+        opacity: 1;
+        margin-left: -100px;
+        /* Use this if you want the Loading word on a rounded border- background-color: #000;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;*/
+    }
+
+    #pageLoader .animation
+    {
+        font-size: 32px;
+        color: #04C8F9;
+        position: relative;
+        left: 18px;
+        top: 10px;
+        display: block;
+        float: left;
+    }
+
+    #pageLoader .loading
+    {
+        font-family: "Calibri";
+        color: #04C8F9;
+        font-size: 22px;
+        position: relative;
+        left: 28px;
+        top: 11px;
+        display: block;
+        float: left;
+    }
+
+/* ##################### /Loader #####################  */
+
+
+
+/* ##################### Dashboard (Home) #####################  */
+
+#dashboardButtons
+{
+    width: 200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+    #dashboardButtons .active
+    {
+        background: -webkit-gradient(linear, center top, center bottom, from(#171516), to(#000000)) !important;
+    }
+
+        #dashboardButtons .active span
+        {
+            color: #ffffff !important;
+            text-shadow: 0px -1px 0px #000000;
+        }
+
+
+    #dashboardButtons .dashboardButton p
+    {
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        display: block;
+        width: 100%;
+        top: 100px;
+        color: #000;
+    }
+
+    #dashboardButtons .dashboardButton span
+    {
+        color: #000;
+        text-align: center;
+        position: absolute;
+        display: block;
+        width: 100%;
+        font-size: 80px;
+        margin-top: 15px;
+    }
+
+    #dashboardButtons.modules1 .dashboardButton
+    {
+        display: block;
+        width: 200px;
+        height: 135px;
+        -webkit-border-radius: 5px;
+        margin-top: 30px;
+        background-color: #04C8F9;
+        font-size: 20px;
+        float: left;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+/* ##################### /Dashboard (Home) #####################  */
+
+/* ##################### View: DareList #####################  */
+
+#dareList
+{
+    padding: 0;
+}
+
+/* ##################### /View: DareList #####################  */
+
+/* #####################  Dare Specific #####################  */
+
+#dareTextInput
+{
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    color: white;
+}
+
+
+#dareToUserName
+{
+    color: white;
+}
+
+/* ##################### /Dare Specific #####################  */
+
+
+/* #####################  Test #####################  */
+
+article
+{
+    font-size: 16px;
+}
+
+    article,
+    article.underline
+    {
+        margin-bottom: 0;
+    }
+
+.underline:last-child
+{
+    border-bottom: none;
+}
+
+article img
+{
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #555;
+    background: #2d2d2d;
+}
+
+/* article */
+/* Date */
+.date
+{
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 5px;
+    background: #ffe04d;
+    color: #333;
+    -webkit-border-radius: .3em;
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    margin: 0 10px 0 0;
+    line-height: 18px;
+}
+
+/* post content and preview styling */
+.post-preview
+{
+    float: left;
+    width: 100px;
+}
+
+    .post-preview img
+    {
+        display: block;
+    }
+
+    .post-preview img
+    {
+        width: 100px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #555;
+        background: #2d2d2d;
+    }
+
+.post-content
+{
+    float: left;
+    width: 60%;
+    padding: 0 0 0 15px;
+}
+
+/* ##################### /Custom #####################  */

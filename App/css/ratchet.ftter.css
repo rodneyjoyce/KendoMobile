@@ -1,0 +1,167 @@
+/** Customisations to Ratchet (changes only) */
+
+/* Base styles
+-------------------------------------------------- */
+
+
+/* iOs does not have Calibri */
+@font-face
+{
+    font-family: 'Calibri';
+    src: url('font/calibri.ttf?v=3.1.0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Wrapper to be used around all content not in .bar-title and .bar-tab */
+.content
+{
+    /*background-image: linear-gradient(to top, #575757 0, #7b7b7b 100%);*/
+    /*background-color: #363636;*/
+    background-image: url(../img/background-pattern.jpg);
+    color: #04c8f9;
+    font-family: "Calibri";
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* Title bar
+-------------------------------------------------- */
+
+/* Bar docked to top of viewport for showing page title and actions */
+.bar-title
+{
+    background-color: #000;
+    background-image: none;
+    background-image: none;
+    border-bottom: 1px solid #000;
+}
+
+    /* Centered text in the .bar-title */
+    .bar-title .title
+    {
+        font-size: 26px;
+        color: #04C8F9;
+        font-family: "Calibri";
+    }
+
+
+/* Tab bar
+-------------------------------------------------- */
+
+/* Label for tab */
+.tab-label
+{
+    margin-top: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Navigational tab */
+.tab-item
+{
+    padding-top: 6px;
+}
+
+    /* Active state for tab */
+    .tab-item.active .tab-label
+    {
+        color: #04C8F9;
+    }
+
+    .tab-item.active .tab-icon
+    {
+        color: #04C8F9;
+    }
+
+.tab-icon
+{
+    display: block !important; /* So that whole button is clickable */
+    color: #fff;
+    font-size: 24px;
+}
+
+
+/* Button modifiers - RJ - This looks better with the default
+-------------------------------------------------- */
+
+/* Positive button  */
+/*.button-positive
+{
+    background-color: #04C8F9;
+    background-image: -webkit-linear-gradient(top, #04C8F9 0, #04beec 100%);
+    background-image: linear-gradient(to bottom, #04C8F9 0, #04beec 100%);
+    border: 1px solid #04beec;
+}
+
+    .button-positive:active
+    {
+        background-color: #04C8F9;
+    }*/
+
+
+/* Buttons in title bars  RJ - This looks better with the default
+-------------------------------------------------- */
+
+/* Generic style for all buttons in .bar-title */
+/*.bar-title [class*="button"]
+{
+    background-color: #04C8F9;
+    background-image: -webkit-linear-gradient(top, #04C8F9 0, #04beec 100%);
+    background-image: linear-gradient(to bottom, #04C8F9 0, #04beec 100%);
+    border: 1px solid #04beec;
+}*/
+
+/* Slider
+-------------------------------------------------- */
+
+/* Width/height of slider */
+/*changing this to 300 broke it on Android
+.slider,
+.slider > li
+{
+    height: 200px;
+}*/
+
+/* Outer wrapper for slider */
+.slider
+{
+    background-color: transparent;
+}
+    /* Required reset of font-size to same as standard body */
+    .slider > ul > li > *
+    {
+        font-size: 18px;
+    }
+
+
+/* Lists
+-------------------------------------------------- */
+/* Remove usual bullet styles from list */
+.list;
+{
+    background-color: #e1e1e1;
+}
+
+/* Pad each list item and add dividers */
+.list li
+{
+    color: #000;
+    font-size: 17px;
+}
+
+/* Pad each list item and add dividers */
+.list li
+{
+    padding: 20px 20px 20px 10px; /* Given extra right padding to accomodate counts, chevrons or buttons */
+}
+
+
+/* Right-aligned subcontent in lists (chevrons, buttons, counts and toggles)
+        (only caters for 1 count but I need 2)
+-------------------------------------------------- */
+
+.list [class*="count"]
+{
+    position: inherit;
+}

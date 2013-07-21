@@ -1,0 +1,158 @@
+/** From Kendo Examples etc */
+
+/* Profile Page and Layout
+-------------------------------------------------- */
+
+/* Profile and pages styles*/
+#tabstrip-profile h2
+{
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 1.5em 0 0 .7em;
+}
+
+    #tabstrip-profile h2 span
+    {
+        display: block;
+        clear: both;
+        font-size: 1.8em;
+        margin: .1em 0 0 0;
+    }
+
+#tabstrip-profile img
+{
+    width: 5em;
+    height: 5em;
+    float: left;
+    margin: 1em;
+    -webkit-box-shadow: 0 1px 3px #333;
+    box-shadow: 0 1px 3px #333;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.km-flat #tabstrip-profile img
+{
+    webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.sales-down,
+.sales-hold,
+.sales-up,
+.value
+{
+    float: right;
+}
+
+.sales-up
+{
+    color: green;
+}
+
+.sales-down
+{
+    color: red;
+}
+
+.sales-hold
+{
+    color: blue;
+}
+
+.value
+{
+    color: #bbb;
+}
+
+/* /Profile Page and Layout
+-------------------------------------------------- */
+
+/* Fb Style Menu
+-------------------------------------------------- */
+
+
+.km-ios #left-drawer .km-content, .km-android #left-drawer .km-content, .km-blackberry #left-drawer .km-content,
+.km-ios #left-drawer .km-list > li, .km-android #left-drawer .km-list > li, .km-blackberry #left-drawer .km-list > li,
+.km-ios #left-drawer .km-listview-link > .km-icon, .km-android #left-drawer .km-listview-link > .km-icon, .km-blackberry #left-drawer .km-listview-link > .km-icon,
+.km-ios #left-drawer .km-list li > .km-icon, .km-android #left-drawer .km-list li > .km-icon, .km-blackberry #left-drawer .km-list li > .km-icon,
+#right-drawer .km-content
+{
+    background-color: #4e4e4e;
+    color: #2e2e2e;
+}
+
+.km-ios #left-drawer .km-group-title,
+.km-blackberry #left-drawer .km-group-title
+{
+    background-color: #6e6e6e;
+    color: #fff;
+}
+
+#left-drawer .km-navbar, #right-drawer .km-navbar,
+.km-tablet .km-ios #left-drawer .km-view-title,
+.km-tablet .km-ios #right-drawer .km-view-title
+{
+    background-color: #2e2e2e;
+    color: #04C8F9 ;
+    text-shadow: 0 -1px rgba(0,0,0,.5);
+}
+
+.km-drawer-button:before, .km-drawer-button:after
+{
+    content: "\E077";
+}
+
+/*.km-contacts:before, .km-contacts:after
+{
+    content: "\E0E4";
+}
+
+.km-camera:before, .km-camera:after
+{
+    content: "\E0D0";
+}
+
+.km-printer:before, .km-printer:after
+{
+    content: "\E07E";
+}
+
+.km-graph:before, .km-graph:after
+{
+    content: "\E04B";
+}*/
+
+.km-comments:before, .km-comments:after
+{
+    content: "\E093";
+}
+
+
+#two-drawer-home h2
+{
+    display: inline-block;
+    font-size: 1em;
+    line-height: 3em;
+    margin: 0 0 0 1em;
+}
+
+#two-drawer-home img
+{
+    float: left;
+    width: 3em;
+    height: 3em;
+    margin: 0;
+    border: 2px solid rgba(0,0,0,.1);
+}
+
+.km-ios #two-drawer-home .km-listview
+{
+    background-color: #eaf1f5;
+}
+
+
+/* /Fb Style Menu
+-------------------------------------------------- */
