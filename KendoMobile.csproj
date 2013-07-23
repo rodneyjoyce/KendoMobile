@@ -57,23 +57,55 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\app.js" />
     <Content Include="App\config.xml" />
+    <Content Include="App\css\Flat\editor.png" />
+    <Content Include="App\css\Flat\imagebrowser.png" />
+    <Content Include="App\css\Flat\loading-image.gif" />
+    <Content Include="App\css\Flat\loading.gif" />
+    <Content Include="App\css\Flat\loading_2x.gif" />
+    <Content Include="App\css\Flat\slider-h.gif" />
+    <Content Include="App\css\Flat\slider-v.gif" />
+    <Content Include="App\css\Flat\sprite.png" />
+    <Content Include="App\css\Flat\sprite_2x.png" />
     <Content Include="App\css\font-awesome.css" />
+    <Content Include="App\css\images\back.png" />
+    <Content Include="App\css\images\wp8_icons.png" />
+    <Content Include="App\css\images\wp8_inverseicons.png" />
     <Content Include="App\css\kendo.ftter.css" />
-    <Content Include="App\css\telerik\js\kendo.mobile.min.js" />
-    <Content Include="App\css\telerik\styles\kendo.mobile.flat.min.css" />
+    <Content Include="App\css\kendo.mobile.flat.min.css" />
+    <Content Include="App\lib\kendo.mobile.min.js" />
+    <Content Include="App\css\kendo.mobile.flat.min.css" />
     <Content Include="App\Index.html" />
+    <Content Include="App\lib\kendo.mobile.min.js" />
+    <Content Include="App\lib\r.js" />
+    <Content Include="App\lib\require.js" />
+    <Content Include="App\main.js" />
+    <Content Include="App\views\addDare.js" />
+    <Content Include="App\views\rightMenu.js" />
+    <Content Include="App\views\menu.js" />
+    <Content Include="App\views\profile.js" />
+    <Content Include="App\views\dareList.js" />
+    <Content Include="App\views\home.js" />
+    <Content Include="Scripts\r.js" />
+    <Content Include="Scripts\require.js" />
+    <Content Include="App\css\images\KendoUI.ttf" />
+    <Content Include="App\css\images\KendoUI.woff" />
     <None Include="App\lib\jquery-2.0.0.intellisense.js" />
     <Content Include="App\lib\jquery-2.0.0.js" />
     <Content Include="App\lib\jquery-2.0.0.min.js" />
     <Content Include="App\lib\knockout-2.2.1.debug.js" />
     <Content Include="App\lib\knockout-2.2.1.js" />
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\lib\jquery-2.0.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App\css\telerik\styles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

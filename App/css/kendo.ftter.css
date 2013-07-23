@@ -4,14 +4,14 @@
 -------------------------------------------------- */
 
 /* Profile and pages styles*/
-#tabstrip-profile h2
+#profile h2
 {
     display: inline-block;
     font-size: 1.1em;
     margin: 1.5em 0 0 .7em;
 }
 
-    #tabstrip-profile h2 span
+    #profile h2 span
     {
         display: block;
         clear: both;
@@ -19,7 +19,7 @@
         margin: .1em 0 0 0;
     }
 
-#tabstrip-profile img
+#profile img
 {
     width: 5em;
     height: 5em;
@@ -31,7 +31,7 @@
     border-radius: 8px;
 }
 
-.km-flat #tabstrip-profile img
+.km-flat #profile img
 {
     webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1);
     box-shadow: 0 0 0 1px rgba(0,0,0,.1);
@@ -74,26 +74,26 @@
 -------------------------------------------------- */
 
 
-.km-ios #left-drawer .km-content, .km-android #left-drawer .km-content, .km-blackberry #left-drawer .km-content,
-.km-ios #left-drawer .km-list > li, .km-android #left-drawer .km-list > li, .km-blackberry #left-drawer .km-list > li,
-.km-ios #left-drawer .km-listview-link > .km-icon, .km-android #left-drawer .km-listview-link > .km-icon, .km-blackberry #left-drawer .km-listview-link > .km-icon,
-.km-ios #left-drawer .km-list li > .km-icon, .km-android #left-drawer .km-list li > .km-icon, .km-blackberry #left-drawer .km-list li > .km-icon,
-#right-drawer .km-content
+.km-ios #menu .km-content, .km-android #menu .km-content, .km-blackberry #menu .km-content,
+.km-ios #menu .km-list > li, .km-android #menu .km-list > li, .km-blackberry #menu .km-list > li,
+.km-ios #menu .km-listview-link > .km-icon, .km-android #menu .km-listview-link > .km-icon, .km-blackberry #menu .km-listview-link > .km-icon,
+.km-ios #menu .km-list li > .km-icon, .km-android #menu .km-list li > .km-icon, .km-blackberry #menu .km-list li > .km-icon,
+#rightMenu .km-content
 {
     background-color: #04c8f9;
     color: #2e2e2e;
 }
 
-.km-ios #left-drawer .km-group-title,
-.km-blackberry #left-drawer .km-group-title
+.km-ios #menu .km-group-title,
+.km-blackberry #menu .km-group-title
 {
     background-color: #6e6e6e;
     color: #fff;
 }
 
-#left-drawer .km-navbar, #right-drawer .km-navbar,
-.km-tablet .km-ios #left-drawer .km-view-title,
-.km-tablet .km-ios #right-drawer .km-view-title
+#menu .km-navbar, #rightMenu .km-navbar,
+.km-tablet .km-ios #menu .km-view-title,
+.km-tablet .km-ios #rightMenu .km-view-title
 {
     color: #fff;
     background-color: #04C8F9;

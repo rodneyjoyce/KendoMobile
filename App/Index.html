@@ -3,83 +3,81 @@
 <head>
     <title>Durandal Kendo Mobile</title>
     <script src="lib/jquery-2.0.0.min.js"></script>
-    <script src="css/telerik/js/kendo.mobile.min.js"></script>
+    <script src="lib/kendo.mobile.min.js"></script>
     <link href="css/font-awesome.css" rel="stylesheet" />
-    <link href="css/telerik/styles/kendo.mobile.flat.min.css" rel="stylesheet" />
+    <link href="css/kendo.mobile.flat.min.css" rel="stylesheet" />
     <link href="css/kendo.ftter.css" rel="stylesheet" />
+
+    <script data-main="main" src="lib/require.js"></script>
+
 </head>
 <body>
 
     <div data-role="layout" data-id="mobile-tabstrip">
         <header data-role="header" id="header">
             <div data-role="navbar">
-                <a data-role="button" data-rel="drawer" href="#left-drawer" data-align="left"><i class="icon-reorder"></i></a>
-                <!--<a class="nav-button" data-align="left" data-role="backbutton">Back</a>-->
+                <a data-role="button" data-rel="drawer" href="#menu" data-align="left"><i class="icon-reorder"></i></a>
                 <span data-role="view-title"></span>
-                <!--<a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>-->
-                <a data-role="button" data-rel="drawer" href="#right-drawer" data-icon="share" data-align="right"></a>
+                <a data-role="button" data-rel="drawer" href="#rightMenu" data-icon="share" data-align="right"></a>
             </div>
         </header>
 
         <div data-role="footer">
             <div data-role="tabstrip">
-                <!--                <a href="#tabstrip-home" data-icon="home">Home</a>-->
-                <a href="#tabstrip-profile" data-icon="contacts">Me</a>
-                <a href="#tabstrip-settings" data-icon="add">Dare Someone</a>
-                <a href="#tabstrip-sales" data-icon="toprated">My Dares</a>
-                <!--<a href="#tabstrip-settings" data-icon="settings">Settings</a>-->
+                <a href="#profile" data-icon="contacts">Me</a>
+                <a href="#addDare" data-icon="add">Dare Someone</a>
+                <a href="#dareList" data-icon="toprated">My Dares</a>
             </div>
         </div>
     </div>
 
-    <div data-role="view" id="tabstrip-profile" data-title="Rodders" data-layout="mobile-tabstrip">
+    <div data-role="view" id="profile" data-title="Rodders" data-layout="mobile-tabstrip" data-model="app.views.profile.viewModel" data-init="app.views.profile.init" data-before-show="app.views.profile.beforeShow" data-show="app.views.profile.show">
         <ul data-role="listview" data-style="inset" data-type="group">
             <li>
                 <ul>
                     <li>
-                        <h2><span>Get fitter</span></h2>
-                        <img src="http://www.ftter.com/profilepic.ashx?userId=8&h=50&w=50" /></li>
+                        <h2><span data-bind="text: userDisplayName"></span></h2>
+                        <img src="http://www.ftter.com/profilepic.ashx?userId=8&h=50&w=50" />
+                    </li>
                     <li>Weekly average sales <span class="sales-up">$ 8,250</span></li>
                     <li>Monthly average sales <span class="sales-up">$ 32,000</span></li>
                 </ul>
             </li>
             <li>Languages
-                    <ul>
-                        <li>English <span class="value">Native</span></li>
-                        <li>Spanish <span class="value">Intermediate</span></li>
-                        <li>French <span class="value">Advanced</span></li>
-                        <li>Chinese <span class="value">Beginner</span></li>
-                        <li>French <span class="value">Advanced</span></li>
-                        <li>Chinese <span class="value">Beginner</span></li>
-                        <li>French <span class="value">Advanced</span></li>
-                        <li>Chinese <span class="value">Beginner</span></li>
-                    </ul>
+                <ul>
+                    <li>English <span class="value">Native</span></li>
+                    <li>Spanish <span class="value">Intermediate</span></li>
+                    <li>French <span class="value">Advanced</span></li>
+                </ul>
+                <input data-bind="value: userDisplayName" />
+                <button data-bind="click: displayGreeting">Display Greeting</button>
+
             </li>
         </ul>
     </div>
 
-    <div data-role="view" id="tabstrip-sales" data-title="My Dares" data-layout="mobile-tabstrip">
+    <div data-role="view" id="dareList" data-title="My Dares" data-layout="mobile-tabstrip" data-model="app.views.dareList.viewModel" data-init="app.views.dareList.init" data-before-show="app.views.dareList.beforeShow" data-show="app.views.dareList.show">
         <ul data-role="listview" data-style="inset" data-type="group">
             <li>Sales 2011
-                    <ul>
-                        <li>January <span class="sales-up">&uarr; $ 35,000</span></li>
-                        <li>February <span class="sales-down">&darr; $ 25,000</span></li>
-                        <li>March <span class="sales-down">&darr; $ 23,000</span></li>
-                        <li>April <span class="sales-up">&uarr; $ 30,000</span></li>
-                        <li>May <span class="sales-up">&uarr; $ 31,000</span></li>
-                        <li>June <span class="sales-down">&darr; $ 29,000</span></li>
-                        <li>July <span class="sales-up">&uarr; $ 35,000</span></li>
-                        <li>August <span class="sales-up">&uarr; $ 37,000</span></li>
-                        <li>September <span class="sales-hold">&rarr; $ 37,000</span></li>
-                        <li>October <span class="sales-hold">&rarr; $ 37,000</span></li>
-                        <li>November <span class="sales-up">&uarr; $ 38,000</span></li>
-                        <li>December <span class="sales-up">&uarr; $ 40,000</span></li>
-                    </ul>
+                <ul>
+                    <li>January <span class="sales-up">&uarr; $ 35,000</span></li>
+                    <li>February <span class="sales-down">&darr; $ 25,000</span></li>
+                    <li>March <span class="sales-down">&darr; $ 23,000</span></li>
+                    <li>April <span class="sales-up">&uarr; $ 30,000</span></li>
+                    <li>May <span class="sales-up">&uarr; $ 31,000</span></li>
+                    <li>June <span class="sales-down">&darr; $ 29,000</span></li>
+                    <li>July <span class="sales-up">&uarr; $ 35,000</span></li>
+                    <li>August <span class="sales-up">&uarr; $ 37,000</span></li>
+                    <li>September <span class="sales-hold">&rarr; $ 37,000</span></li>
+                    <li>October <span class="sales-hold">&rarr; $ 37,000</span></li>
+                    <li>November <span class="sales-up">&uarr; $ 38,000</span></li>
+                    <li>December <span class="sales-up">&uarr; $ 40,000</span></li>
+                </ul>
             </li>
         </ul>
     </div>
 
-    <div data-role="view" id="tabstrip-settings" data-title="Dare Someone" data-layout="mobile-tabstrip">
+    <div data-role="view" id="addDare" data-title="Dare Someone" data-layout="mobile-tabstrip" data-model="app.views.addDare.viewModel" data-init="app.views.addDare.init" data-before-show="app.views.addDare.beforeShow" data-show="app.views.addDare.show">
         <ul data-role="listview" data-style="inset" data-type="group">
             <li>Carine Callahan
                 <ul>
@@ -94,10 +92,8 @@
         </ul>
     </div>
 
-
-
     <!-- fb style menus -->
-    <div data-role="drawer" id="left-drawer" style="width: 270px" data-title="My ftter">
+    <div data-role="drawer" id="menu" style="width: 270px" data-title="my ftter" data-model="app.views.menu.viewModel" data-init="app.views.menu.init" data-before-show="app.views.menu.beforeShow" data-show="app.views.menu.show">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
@@ -129,8 +125,7 @@
         </ul>
     </div>
 
-
-    <div data-role="drawer" id="right-drawer" style="width: 180px" data-title="Share the Love" data-position="right">
+    <div data-role="drawer" id="rightMenu" style="width: 180px" data-title="Share the Love" data-position="right" data-model="app.views.rightMenu.viewModel" data-init="app.views.rightMenu.init" data-before-show="app.views.rightMenu.beforeShow" data-show="app.views.rightMenu.show">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
@@ -144,7 +139,7 @@
         </ul>
     </div>
 
-    <!--    <div data-role="drawer" id="right-drawer" style="width: 80px" data-title="Share" data-position="right" data-views="['two-drawer-home', '/mobile/m/drawer/two-way-drawers.html']">
+    <!--    <div data-role="drawer" id="rightMenu" style="width: 80px" data-title="Share" data-position="right" data-views="['two-drawer-home', '/mobile/m/drawer/two-way-drawers.html']">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
@@ -153,10 +148,10 @@
         <img src="../../content/mobile/shared/share.png" width="100%" />
     </div>-->
 
-    <script>
+    <!--    <script>
         var app = new kendo.mobile.Application($(document.body), {
             skin: "flat"
         });
-    </script>
+    </script>-->
 </body>
 </html>
